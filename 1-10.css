@@ -5,6 +5,7 @@
 }
 a {
 	text-decoration: none;
+	color: #FAFAFA;
 }
 .clearfix::after {
 	content: "";
@@ -15,6 +16,9 @@ header {
 	width: 100%;
 	height: 70px;
 	background-color: #EC715F;
+}
+.hambar {
+	display: none;
 }
 .header-bar {
 	width: 1024px;
@@ -298,27 +302,34 @@ header {
 }
 .sns {
 	float: left;
-	font-size: 20px;
 	width: 400px;
 	text-align: left;
 }
+
+.snstext {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
 #co-icon {
 	list-style: none;
-	margin-top: 5px;
 }
 #co-icon li {
 	float: left;
 }
-#co-icon li i {
+#icon1 {
 	font-size: 50px;
-	padding-right: 20px;
+	margin-right: 20px;
+}
+#icon2 {
+	font-size: 50px;
+	margin-right: 0px;
 }
 .co-left {
 	width: 120px;
 	margin: 0 auto;
 }
 .co-right {
-	width: 180px;
+	width: 160px;
 	margin: 0 auto;
 }
 footer {
@@ -331,188 +342,236 @@ footer {
 	text-align: center;
 }
 
-/* ========================================================================
-  Media Queries
-======================================================================== */
 
-@media(max-width: 768px){
+@media(max-width: 768px) {
 
-	/* =====================
-	  setting
-	===================== */
+	header {
+		height: 50px;
+	}
 
-	.container{
+    .hambox {
+	float: right;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #FAFAFA;
+    margin: 5px 5% 5px 0;
+}
+    .hambar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 8px auto;
+    background-color: #FAFAFA;
+    }
+
+	.nav-list {
+		display: none;
+	}
+
+	.header-img {
+		height: 50px;
+	}
+
+	.header-bar {
 		width: 90%;
 	}
 
-	.sp-none{
-		display: none;
-	}
-
-	.left-content{
+	.main-visual {
 		float: none;
-		width: 100%;
+		background-image: url("img/code.png");
+		height: 650px;
 	}
 
-	.right-content{
-		float: none;
-		width: 100%;
-	}
-
-	/* =====================
-	  Header
-	===================== */
-
-	header{
-		height: 50px;
-	}
-
-	.logo{
-		float: none;
-		height: 50px;
-	}
-
-	.menu-box{
-		float: right;
-		width: 40px;
-		height: 40px;
-		margin-right: 5%;
-		border: 1px solid #FAFAFA;
-		margin-top: 5px;
-		margin-bottom: 5px;
-	}
-
-	.list-bar{
-		display: block;
-		width: 25px;
-		height: 2px;
-		margin: 5px auto;
-		background-color: #FAFAFA;
-	}
-
-	.list-bar:first-child{
-		margin-top: 10px;
-	}
-
-	.nav{
-		float: none;
-	}
-
-	.nav-list{
-		display: none;
-		float: none;
-		width: 100%;
-		line-height: 50px;
-		border-bottom: 1px solid gray;
-		text-align: center;
-		background-color: rgba(0,0,0,.9);
-	}
-
-	.nav-list:last-child{
-		border: none;
-	}
-
-	/* =====================
-	  MainVisual
-	===================== */
-
-	#mv{
-		background-image: url(../img/code.png);
-	}
-
-	.mv-title{
+	.maintext {
 		font-size: 40px;
+		width: 90%;
+		margin: 0 auto;
 	}
 
-	.mv-text{
+	.subtext {
 		font-size: 18px;
+		width: 90%;
+		margin: 0 auto;
 	}
 
-	/* =====================
-	  Portfolio
-	===================== */
-
-	#portfolio{
-		padding: 0 5%;
+	#folios {
+		width: 90%;
 	}
 
-	.production-group{
-		width: 300px;
+	.foliosize {
+		width: 90%;
+		margin: 0 auto;
 	}
 
-	.production{
-		float: none;
-	}
+.folio1 {
+	float: none;
+	display: none;
+}
+.folio2 {
+	float: none;
+	width: 300px;
+	height: 250px;
+	margin: 0 auto 10px auto;
+	background-size: cover;
+	background-position: center;
+	background-image: url(img/websuku.png);
+}
+.folio3 {
+	float: none;
+	display: none;
+}
+.folio4 {
+	float: none;
+	width: 300px;
+	height: 250px;
+	margin: 0 auto 10px auto;
+	background-size: cover;
+	background-position: center;
+	background-image: url(img/webcamp.png);
+}
+.folio5 {
+	float: none;
+	display: none;
+}
+.folio6 {
+	float: none;
+	width: 300px;
+	height: 250px;
+	margin: 0 auto 10px auto;
+	background-size: cover;
+	background-position: center;
+	background-image: url(img/webcamp-mother.png);
+}
 
-	/* =====================
-	  Feature
-	===================== */
+.portfolio-text {
+	width: 90%;
+	margin: 0 auto;
+}
 
-	#feature{
-		padding: 0 5%;
-		background-size: cover;
-		background-position: center;
-	}
+.portfolio-text2 {
+	width: 90%;
+	margin: 0 auto 30px auto;
+}
 
-	.strength-group{
-		width: 320px;
-	}
+#feature {
+	width: 90%;
+	margin: 0 auto;
+}
 
-	.strength{
-		float: none;
-		margin-top: 20px;
-	}
+.f-text {
+	width: 90%;
+	margin: 30px auto 30px auto;
+}
 
-	.strength:first-child{
-		margin-top: 0;
-	}
+.f-title {
+	width: 90%;
+	margin: 90px auto 0 auto;
+}
 
-	/* =====================
-	  Profile
-	===================== */
+#f-main {
+	width: 90%;
+	margin: 0 auto;
+	float: none;
+}
 
-	#profile{
-		padding: 0 5%;
-	}
+.strength {
+	margin: 0 auto 10px auto;
+	float: none;
+}
 
-	.profile-group{
-		text-align: center;
-	}
-
-	.discription-title:first-child{
-		margin-top: 20px;
-	}
+.strength:nth-child(3n) {
+	float: none;
+	margin: 0 auto 90px auto;
+}
 
 
-	/* =====================
-	  Contact
-	===================== */
 
-	#contact{
-		padding: 0 5%;
-	}
+#width {
+	width: 90%;
+}
+.prosize {
+	width: 90%;
+	margin: 0 auto;
+}
+.photo-box {
+	width: 90%;
+	margin: 0 auto;
+	float: none;
+}
 
-	.contact-group{
-		width: 100%;
-		text-align: center;
-	}
+.pro-text {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	float: none;
+}
 
-	.left-contact-content{
-		width: 100%;
-	}
+.pro-main {
+	width: 90%;
+	margin: 30px auto;
+}
 
-	.right-contact-content{
-		width: 100%;
-		margin-top: 20px;
-	}
+.pro-title {
+	width: 90%;
+	margin: 0 auto;
+}
 
-	.right-contact-content .fa {
-		font-size: 50px;
-		margin-right: 8px;
-	}
+.mytitle {
+	margin-top: 20px;
+}
 
-	/* =====================
-	  Footer
-	===================== */
+#contact {
+	width: 90%;
+}
 
+.co-main {
+	width: 90%;
+    margin: 30px auto 30px auto;
+}
+#co-under {
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 90px;
+}
+
+.co-mts {
+	float: none;
+}
+
+.co-mt {
+	text-align: center;
+}
+
+.tell {
+	margin-bottom: 20px;
+}
+
+.sns {
+	margin: 0 auto;
+	width: 90%;
+	text-align: center;
+	float: none;
+}
+
+.co-icon li{
+	float: none;
+}
+#icon1 {
+	font-size: 50px;
+	margin-right: 8px;
+}
+#icon2 {
+	font-size: 50px;
+	margin-right: 0px;
+}
+.co-right {
+	width: 136px;
+	margin: 0 auto;
+}
+
+footer {
+	line-height: 60px;
+	height: 60px;
+	position: absolute;
+	margin: auto;
 }

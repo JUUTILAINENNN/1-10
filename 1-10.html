@@ -2,22 +2,33 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 	<link href="1-10.css" rel="stylesheet">
 	<title>MySlite</title>
 </head>
 <body>
+	
 	<header>
+
 		<div class="header-bar">
 			<img class="header-img" src="img/logo.png">
-			<nav>
+			<div class="hambox">
+				<span class="hambar"></span>
+				<span class="hambar"></span>
+				<span class="hambar"></span>
+			</div>
 				<ul class="nav-list">
-					<li class="nav-list-item">Portfolio</li>
-					<li class="nav-list-item">Feature</li>
-					<li class="nav-list-item">Profile</li>
-					<li class="nav-list-item">Contact</li>
+					<li class="nav-list-item"><a href="#portfolio">Portfolio</a></li>
+					<li class="nav-list-item"><a href="#feature">Feature</a></li>
+					<li class="nav-list-item"><a href="#profile">Profile</a></li>
+					<li class="nav-list-item"><a href="#contact">Contact</a></li>
 				</ul>
-			</nav>
+			
+      </div>
+  
+
+			
 		</div>
 	</header>
 	<main class="clearfix" id="mv">
@@ -26,6 +37,7 @@
 			<h3 class="subtext">simply dummy text of the printing</h3>
 		</section>
 		<section id="portfolio">
+			<div class="foliosize">
 			<h1 class="portfolio-text">Portfolio</h1>
 			<p class="portfolio-text2">it is established fact that a reader will be distracted by the readeble<br>
 			content of a when looking at the layout.<br>
@@ -38,6 +50,7 @@
 				<div class="folio5"></div>
 				<div class="folio6"></div>
 			</div>
+		</div>
 		</section>
 		<section class="clearfix" id="feature">
 			<h1 class="f-title">Feature</h1>
@@ -75,6 +88,7 @@
 			</div>
 		</section>
 		<section class="clearfix" id="profile">
+			<div class="prosize">
 			<h1 class="pro-title">Profile</h1>
 			<p class="pro-main">It is a long established fact that a reader will be distracted by the readable<br>
 			content of a page when looking at its layout.<br>
@@ -82,29 +96,30 @@
 			<div class="clearfix" id="width">
 				<div class="photo-box"><img alt="icon" class="pro-photo" src="img/my-icon.jpg"></div>
 				<div class="pro-text">
-					<p class="mytitle">MyName</p>
+					<p class="mytitle"><span style="font-weight:bold">MyName</span></p>
 					<p class="pro-main1">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
-					<p class="mytitle">MySkills</p>
+					<p class="mytitle"><span style="font-weight:bold">MySkills</span></p>
 					<p class="pro-main2">HTML/CSS,JavaScript,JQuery,PhotoShop</p>
 				</div>
 			</div>
+		</div>
 		</section>
 		<section class="clearfix" id="contact">
 			<h1 class="co-title">Contact</h1>
-			<h3 class="co-main">It is a long established fact that a reader will be distracted by the readable<br>
-			content of a page when looking at its layout.<br>
+			<h3 class="co-main">It is a long established fact that a reader will be distracted by the readable
+			content of a page when looking at its layout.
 			The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</h3>
 			<div class="clearfix" id="co-under">
 				<div class="co-mts">
 					<div class="co-left">
 						<div class="co-mt">
-							Mail
+							<span style="font-weight:bold">Mail</span>
 						</div>
 						<div class="mail">
 							xxx@xxx.com
 						</div>
 						<div class="co-mt">
-							Tell
+							<span style="font-weight:bold">Tell</span>
 						</div>
 						<div class="tell">
 							000-000-0000
@@ -114,12 +129,12 @@
 				<div class="sns">
 					<div class="co-right">
 						<div class="snstext">
-							SNS
+							<span style="font-weight:bold">SNS</span>
 						</div>
 						<ul class="clearfix" id="co-icon">
-							<li><i class="fab fa-facebook-f"></i></li>
-							<li><i class="fab fa-twitter"></i></li>
-							<li><i class="fab fa-instagram"></i></li>
+							<li><i id="icon1" class="fab fa-facebook-f"></i></li>
+							<li><i id="icon1" class="fab fa-twitter"></i></li>
+							<li><i id="icon2" class="fab fa-instagram"></i></li>
 						</ul>
 					</div>
 				</div>
@@ -129,5 +144,6 @@
 	<footer>
 		@2017 Webcamp
 	</footer>
+
 </body>
 </html>
